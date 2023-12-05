@@ -1,5 +1,5 @@
 from db import db
-
+from sqlalchemy.orm import Mapped, mapped_column
 
 class ItemModel(db.Model):
     __tablename__ = "items"
@@ -12,3 +12,4 @@ class ItemModel(db.Model):
         db.Integer, db.ForeignKey("stores.id"), unique=False, nullable=False
     )
     store = db.relationship("StoreModel", back_populates="items")
+    # here items is the name of the property in StoreModel table
