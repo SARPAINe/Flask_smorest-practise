@@ -13,3 +13,4 @@ class ItemModel(db.Model):
     )
     store = db.relationship("StoreModel", back_populates="items")
     # here items is the name of the property in StoreModel table
+    tags = db.relationship("TagModel", back_populates="items", secondary="items_tags")
