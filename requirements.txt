@@ -9,3 +9,6 @@ flask-migrate
 datetime
 gunicorn
 psycopg2
+requests
+sqlalchemy-stubs
+commitizen
