@@ -20,6 +20,8 @@ def create_app(db_url=None):
     app = Flask(__name__)
     load_dotenv()
 
+
+
     # app.config["SQLALCHEMY_DATABASE_URI"] = db_url or os.getenv("DATABASE_URL", "sqlite:///data.db")
     # app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
     # app.config["JWT_SECRET_KEY"]=os.environ["JWT_SECRET"]if

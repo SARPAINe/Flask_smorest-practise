@@ -12,3 +12,5 @@ psycopg2
 requests
 sqlalchemy-stubs
 commitizen
+rq
+redis
