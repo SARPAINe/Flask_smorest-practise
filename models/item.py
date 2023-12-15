@@ -1,7 +1,7 @@
-from db import db
+from db import db,BaseModel
 from sqlalchemy.orm import Mapped, mapped_column
 
-class ItemModel(db.Model):
+class ItemModel(BaseModel):
     __tablename__ = "items"
 
     id = db.Column(db.Integer, primary_key=True)

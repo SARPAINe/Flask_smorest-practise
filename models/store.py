@@ -1,7 +1,7 @@
-from db import db
+from db import db,BaseModel
 
 
-class StoreModel(db.Model):
+class StoreModel(BaseModel):
     __tablename__ = "stores"
 
     id = db.Column(db.Integer, primary_key=True)

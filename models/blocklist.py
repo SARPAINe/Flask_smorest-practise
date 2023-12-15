@@ -1,7 +1,7 @@
-from db import db
+from db import db,BaseModel
 
 
-class BlockListModel(db.Model):
+class BlockListModel(BaseModel):
     __tablename__ ="blocklists"
 
     id=db.Column(db.Integer,primary_key=True)
